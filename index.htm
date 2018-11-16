@@ -7,7 +7,181 @@
       xyYPYzwiIINTqNvmDwjUcYGhJVamw64YJ7rsJrexLHZlZnWhBHzwOB7fx0hSfYKQ
       1WWHKQAAOw==
     ">
-    <STYLE></STYLE>
+    <STYLE>
+      body {
+        background: #2e3440;
+        color: #d8dee9;
+        font: normal 1.2em/1.5em monospace;
+        margin: 3em auto;
+        width: 40em;
+      }
+      h1, h2, h3, h4 {
+        font-weight: normal;
+      }
+      h1 {
+        color: #a3be8c;
+        font-size: 2em;
+        font-weight: normal;
+      }
+      h2 {
+        color: #ebcb8b;
+        font-size: 1.8em;
+      }
+      h3 {
+        color: #d08770;
+        font-size: 1.6em;
+      }
+      h4 {
+        color: #a3be8c;
+        font-size: 1.4em;
+      }
+      h5 {
+        color: #bf616a;
+        font-size: 1.2em;
+      }
+      hr {
+        border: none;
+        border-top: 0.25em dashed #3b4252;
+        height: 0;
+        margin: 2em auto;
+      }
+      blockquote, pre {
+        border-left: 0.25em solid #8fbcbb;
+        padding-left: 1em;
+      }
+      blockquote {
+        border-left-color: #81a1c1;
+        margin: auto;
+      }
+      img {
+        margin: 1em auto;
+        display: block;
+        border: 0.25em solid #434c5e;
+        width: 34em;
+        padding: 0.1em;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: pixelated;
+      }
+      ol, ul {
+        margin: 1em auto;
+        list-style-position: inside;
+        padding: 0;
+      }
+      ul {
+        list-style-type: square;
+      }
+      ol {
+        list-style-type: roman;
+      }
+      ol ol {
+        list-style-type: lower-alpha;
+      }
+      li {
+        margin: 1em auto;
+        padding-left: 2em;
+      }
+      form b, form i {
+        display: block;
+        font-weight: normal;
+        width: 9em;
+        float: left;
+      }
+      form i {
+        text-indent: -1000000em;
+        overflow: hidden;
+      }
+      input, textarea {
+        background: #3b4252;
+        color: #d8dee9;
+        border: 0.1em solid #4c566a;
+        font: 1em/1em monospace;
+        padding: 0.25em 0.5em;
+      }
+      textarea {
+        line-height: 1.5em;
+        width: 30em;
+      }
+      table {
+        width: 100%;
+        border: 0.1em solid #3b4252;
+        border-collapse: collapse;
+        font-size: 1em;
+      }
+      caption {
+        padding: 0.5em;
+        font-weight: bold;
+        color: #4c566a;
+      }
+      th, td {
+        font-weight: normal;
+        padding:0.5em;
+        border: 0.1em solid #3b4252;
+        text-align: left;
+      }
+      th {
+        background: #3b4252;
+      }
+      a {
+        color: #81a1c1;
+      }
+      a:link {
+        color: #88c0d0;
+      }
+      a:visited {
+        color: #b48ead;
+      }
+      dl {
+        border-left: 0.25em solid #5e81ac;
+        padding-left: 1em;
+      }
+      dt {
+        color: #eceff4;
+        font-weight: bold;
+        margin:1em auto 0;
+      }
+      dd {
+        margin:0 auto 1em;
+      }
+      body>div:first-child {
+        overflow:auto;
+      }
+      body>div:first-child h1 {
+        text-align:center;
+        margin: 0;
+        font-size:3em;
+        line-height:1em;
+      }
+      body>div:first-child h1 em {
+        font-weight:bold
+      }
+      body>div:first-child ul {
+        float:left;
+        clear: left;
+        width: 100%;
+        margin: 1em 0;
+        list-style-type: none;
+        border-top: 0.1em solid #3b4252;
+        border-bottom: 0.1em solid #3b4252;
+      }
+      body>div:first-child li {
+        float: left;
+        width: 20%;
+        padding: 0;
+        margin:0;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight:normal;
+      }
+      body>div:first-child a {
+        text-decoration: none;
+        display:block;
+        padding:0.5em 0;
+      }
+      body>div:first-child a:hover {
+        background: #3b4252;
+        color: #ECEFF4;
+      }
+    </STYLE>
   </HEAD>
   <BODY>
     <DIV>
@@ -31,6 +205,12 @@
         belong to us cache rm -rf ssh less malloc gobble piggyback.
       </P>
       <A HREF="image.gif">
+        <!--
+          convert image.jpg -resize 32x32\! -colorspace gray -colors 16 -strip -filter triangle image.gif
+          manually added a sepia tone
+          openssl base64 < image.gif
+          convert image.jpg -resize 320x320\! -colorspace gray -colors 16 -filter triangle -define dither:diffusion-amount=100% image.gif
+        -->
         <IMG ALT="sample image" SRC="data:image/gif;base64,
           R0lGODdhIAAgAMQAAAAAAA4CARYGAxcIAxoKBCEPByUSCjMfEzciFTgjFkUvH0cx
           IUgyIV5HMl9IM2BJM39oToBpT4FqUJ6Jbb2sktfLt9fLuNjLuObdz+fd0P///wAA
